@@ -1,0 +1,61 @@
+.cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: relative;
+}
+
+.cell:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.given {
+  background-color: #ddd;
+  color: #333;
+}
+
+.conflict {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.pencil-marks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  width: 80%;
+  height: 80%;
+}
+
+.pencil-mark {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+}
+
+.pencil-mark.active {
+  font-weight: bold;
+  color: #333;
+}
+
+.cell-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.cell:empty {
+  background-color: #fff;
+  color: #ccc;
+}
